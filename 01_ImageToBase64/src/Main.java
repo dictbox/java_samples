@@ -23,6 +23,7 @@ public class Main {
                 for (File image : images) {
                     InputStream in = new FileInputStream(image);
                     byte[] data = new byte[in.available()];
+                    //noinspection ResultOfMethodCallIgnored
                     in.read(data);
                     in.close();
                     System.out.println(image.getName() + ":");
