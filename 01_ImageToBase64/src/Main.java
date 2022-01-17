@@ -6,6 +6,9 @@ import java.util.Arrays;
 import java.util.Base64;
 import java.util.Objects;
 
+/**
+ * 批量输出指定目录下的图片文件的base64码
+ */
 public class Main {
     public static void main(String[] args) {
         try {

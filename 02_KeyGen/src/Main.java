@@ -4,6 +4,9 @@ import java.security.PrivateKey;
 import java.security.PublicKey;
 import java.util.Base64;
 
+/**
+ *  生成RSA公私钥的Base64字符串。
+ */
 public class Main {
 
     public static void main(String[] args) {
