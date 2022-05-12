@@ -1,6 +1,7 @@
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.InputStream;
+import java.nio.file.Files;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Base64;
@@ -24,7 +25,7 @@ public class Main {
                 }
 
                 for (File image : images) {
-                    InputStream in = new FileInputStream(image);
+                    InputStream in = Files.newInputStream(image.toPath());
                     byte[] data = new byte[in.available()];
                     //noinspection ResultOfMethodCallIgnored
                     in.read(data);
